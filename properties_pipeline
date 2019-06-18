@@ -4,22 +4,20 @@ agent any
 
 stages {
     stage ('Groovy variable Testing'){
-            steps {
+        steps{
             
-
                 def variable1 = 'Test2'
                 echo Variable1
             }
             
-            }
-    
-
-    stage ('Read properties file'){
-        steps{
             
+                }
+    stage ('Read properties file'){
+       
+        script{            
         def props = readProperties  file: 'find.properties'
         }
-        }
-    }
+            }
+}
 
 }
