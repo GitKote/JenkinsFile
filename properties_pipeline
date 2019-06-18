@@ -1,0 +1,9 @@
+pipeline {
+
+node {
+agent any
+
+}
+
+
+}
