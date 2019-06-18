@@ -8,7 +8,7 @@ stages {
             script {
             
                 def variable1 = 'Test2'
-                echo Variable1
+                echo "${Variable1}"
             }
         }
             
