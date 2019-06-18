@@ -3,7 +3,7 @@ pipeline {
 agent any
 
 stages {
-    stage ('Groovy variable Testing '){
+    stage ('Groovy variable Testin'){
             steps {
             step {
 
