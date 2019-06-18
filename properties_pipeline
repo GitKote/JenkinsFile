@@ -3,14 +3,21 @@ pipeline {
 agent any
 
 stages {
-    stage ('Groovy variable Testin'){
+    stage ('Groovy variable Testing'){
             steps {
             step {
 
                 def variable1 = 'Test2'
                 echo Variable1
             }
+            
             }
+    }
+
+    stage ('Read properties file'){
+
+        def props = readProperties  file: 'find.properties'
+
     }
 }
 
