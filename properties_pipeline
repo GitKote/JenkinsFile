@@ -8,9 +8,11 @@ agent any
 stages {
     stage ('Groovy variable Testing '){
             steps {
+            step {
 
                 def variable = 'Test'
                 echo Variable
+            }
             }
     }
 }
