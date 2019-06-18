@@ -15,7 +15,7 @@ stages {
     }
 
     stage ('Read properties file'){
-        steps{
+        step{
 
         def props = readProperties  file: 'find.properties'
 }
