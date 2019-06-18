@@ -19,7 +19,7 @@ stages {
         steps{            
             script {
         def props = readProperties  file: 'find.properties'
-        cd $venu
+        cd '$venu'
         ls
                 }
         }
