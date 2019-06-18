@@ -19,7 +19,8 @@ stages {
         steps{            
             script {
         def props = readProperties  file: 'find.properties'
-        echo "${props['venu']}"
+        cd $venu
+        ls
                 }
         }
             }
