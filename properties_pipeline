@@ -8,7 +8,7 @@ stages {
         steps{
              node ('master') {
             script {
-            cleanWs notFailBuild: true
+           // cleanWs notFailBuild: true
                 def Variable1 = 'Test2'
                 echo "${Variable1}"
             }
