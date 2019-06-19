@@ -18,8 +18,8 @@ stages {
        
         steps{            
             script {
-        def props = readProperties  file: 'find.properties'
-        echo "${props['venu']}"
+        def props = readYaml  file: 'find.yaml'
+        echo "${props['os']['windows']}"
                 }
         }
             }
