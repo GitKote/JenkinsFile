@@ -1,6 +1,6 @@
 pipeline {
 
-node {
+node 'master' {
  def props = readYaml  file: 'find.yaml'
         echo "${props['os']['windows']}"
 }
