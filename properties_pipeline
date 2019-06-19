@@ -1,9 +1,11 @@
 pipeline {
-
+agent {
 node 'master' {
  def props = readYaml  file: 'find.yaml'
         echo "${props['os']['windows']}"
 }
+}
+
 agent any
 stages {
     stage ('Groovy variable Testing'){
