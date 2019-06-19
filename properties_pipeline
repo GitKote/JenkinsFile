@@ -14,7 +14,7 @@ stages {
             
             
                 }
-    stage ('Read properties file'){
+    stage ('Read properties file yaml'){
        
         steps{            
             script {
