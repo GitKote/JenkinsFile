@@ -6,7 +6,7 @@ stages {
     stage ('Groovy variable Testing'){
    
         steps{
-             node {
+             node 'master' {
             script {
             
                 def Variable1 = 'Test2'
@@ -19,7 +19,7 @@ stages {
     stage ('Read properties sfile yaml'){
      
         steps{    
-              node {        
+              node 'master' {        
             script {
         def props = readYaml  file: 'find.yaml'
         //echo "${props['os']['windows']}"
