@@ -19,14 +19,14 @@ stages {
     stage ('Read properties sfile yaml'){
      
         steps{    
-              node ('master') {        
+             
             script {
         def props = readYaml  file: 'find.yaml'
         //echo "${props['os']['windows']}"
                 }
         }
         }
-            }
+            
 }
 
 }
