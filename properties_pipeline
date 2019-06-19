@@ -1,5 +1,10 @@
-node {
+pipeline {
 
+node {
+ def props = readYaml  file: 'find.yaml'
+        echo "${props['os']['windows']}"
+}
+agent any
 stages {
     stage ('Groovy variable Testing'){
         steps{
@@ -17,7 +22,7 @@ stages {
         steps{            
             script {
         def props = readYaml  file: 'find.yaml'
-        echo "${props['os']['windows']}"
+        //echo "${props['os']['windows']}"
                 }
         }
             }
