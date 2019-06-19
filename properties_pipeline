@@ -4,8 +4,9 @@ agent any
 
 stages {
     stage ('Groovy variable Testing'){
-    node {
+   
         steps{
+             node {
             script {
             
                 def Variable1 = 'Test2'
@@ -16,8 +17,9 @@ stages {
             
                 }
     stage ('Read properties sfile yaml'){
-       node {
-        steps{            
+     
+        steps{    
+              node {        
             script {
         def props = readYaml  file: 'find.yaml'
         //echo "${props['os']['windows']}"
@@ -26,5 +28,5 @@ stages {
         }
             }
 }
-
+}
 }
