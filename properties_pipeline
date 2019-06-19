@@ -1,9 +1,5 @@
 pipeline {
-agent {
-node  {
- def props = readYaml  file: 'find.yaml'
-        echo "${props['os']['windows']}"
-}
+agent any
 
 
 stages {
